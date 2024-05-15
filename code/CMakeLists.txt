@@ -1183,6 +1183,7 @@ ENDIF()
 
 ADD_LIBRARY( assimp ${assimp_src} )
 ADD_LIBRARY(assimp::assimp ALIAS assimp)
+set_target_properties(assimp PROPERTIES FOLDER "ASSIMP")
 
 # Add or remove dllexport tags depending on the library type.
 IF (BUILD_SHARED_LIBS)

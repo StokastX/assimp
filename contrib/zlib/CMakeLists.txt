@@ -197,6 +197,7 @@ if(MINGW)
 endif(MINGW)
 
 add_library(zlibstatic STATIC ${ZLIB_SRCS} ${ZLIB_ASMS} ${ZLIB_PUBLIC_HDRS} ${ZLIB_PRIVATE_HDRS})
+set_target_properties(zlibstatic PROPERTIES FOLDER "ASSIMP")
 
 IF(ASSIMP_INSTALL)
     INSTALL( TARGETS zlibstatic

@@ -57,6 +57,8 @@ ENDIF()
 
 PROJECT(Assimp VERSION 5.4.0)
 
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
 # All supported options ###############################################
 
 OPTION( BUILD_SHARED_LIBS
